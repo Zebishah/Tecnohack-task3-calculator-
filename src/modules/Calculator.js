@@ -63,10 +63,10 @@ const Calculator = () => {
 
     return (
         <div>
-            <div className='flex flex-col justify-center items-center w-full h-screen bg-[#232323] gap-y-2'>
-                <h1 className='text-purple-500 font-sans text-[2rem]'>Calculator</h1>
-                <div className='flex flex-col justify-center items-center p-4 bg-[#231F20] shadow-sm shadow-black w-[38%] gap-2 smd:w-[38%] ssm:w-[68%] sssm:w-[88%]' >
-                    <div className='flex flex-col justify-center items-center bg-purple-600 gap-1 w-[87%] rounded-md '>
+            <div className='flex flex-col justify-center items-center w-full h-screen bg-orange-400 gap-y-4'>
+                <h1 className='bg-orange-400 font-sans text-[2rem] text-white p-2 rounded-md shadow-sm shadow-black '>Calculator-Task3</h1>
+                <div className='flex flex-col blur-background backdrop-blur justify-center items-center p-4 shadow-sm shadow-black w-[38%] gap-2 smd:w-[38%] ssm:w-[68%] sssm:w-[88%]' >
+                    <div className='flex flex-col justify-center items-center bg-orange-500 gap-1 w-[87%] rounded-md shadow-sm shadow-black'>
                         <div className='flex flex-col gap-2 p-3 w-[100%] text-right h-[5rem]'>
                             <p className='text-right text-white font-sans'>{exp}</p>
                             <p className='text-right text-white font-sans text-[1.5rem]'>{result}</p>
@@ -76,34 +76,34 @@ const Calculator = () => {
                     </div>
 
                     <div className='flex flex-row gap-x-1 w-[87%] justify-center items-center'>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={clear} onClick={() => AC()}>AC</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={del} onClick={() => DEL()}>DEL</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={percent} onClick={() => BtnClick(percent.current.textContent)}>%</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={divide} onClick={() => BtnClick(divide.current.textContent)}>/</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={clear} onClick={() => AC()}>AC</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={del} onClick={() => DEL()}>DEL</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={percent} onClick={() => BtnClick(percent.current.textContent)}>%</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={divide} onClick={() => BtnClick(divide.current.textContent)}>/</button>
                     </div>
                     <div className='flex flex-row gap-x-1 w-[87%] justify-center items-center'>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={seven} onClick={() => BtnClick(seven.current.textContent)}>7</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={eight} onClick={() => BtnClick(eight.current.textContent)}>8</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={nine} onClick={() => BtnClick(nine.current.textContent)}>9</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={multiply} onClick={() => BtnClick(multiply.current.textContent)}>*</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={seven} onClick={() => BtnClick(seven.current.textContent)}>7</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={eight} onClick={() => BtnClick(eight.current.textContent)}>8</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={nine} onClick={() => BtnClick(nine.current.textContent)}>9</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={multiply} onClick={() => BtnClick(multiply.current.textContent)}>*</button>
                     </div>
                     <div className='flex flex-row gap-x-1 w-[87%] justify-center items-center'>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={four} onClick={() => BtnClick(four.current.textContent)}>4</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={five} onClick={() => BtnClick(three.current.textContent)}>5</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={six} onClick={() => BtnClick(six.current.textContent)}>6</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={minus} onClick={() => BtnClick(minus.current.textContent)}>-</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={four} onClick={() => BtnClick(four.current.textContent)}>4</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={five} onClick={() => BtnClick(three.current.textContent)}>5</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={six} onClick={() => BtnClick(six.current.textContent)}>6</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={minus} onClick={() => BtnClick(minus.current.textContent)}>-</button>
                     </div>
                     <div className='flex flex-row gap-x-1 w-[87%] justify-center items-center'>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={one} onClick={() => BtnClick(one.current.textContent)}>1</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={two} onClick={() => BtnClick(two.current.textContent)}>2</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={three} onClick={() => BtnClick(three.current.textContent)}>3</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={plus} onClick={() => BtnClick(plus.current.textContent)}>+</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={one} onClick={() => BtnClick(one.current.textContent)}>1</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={two} onClick={() => BtnClick(two.current.textContent)}>2</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={three} onClick={() => BtnClick(three.current.textContent)}>3</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={plus} onClick={() => BtnClick(plus.current.textContent)}>+</button>
                     </div>
                     <div className='flex flex-row gap-x-1 w-[87%] justify-center items-center'>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={dbl_zero} onClick={() => BtnClick(dbl_zero.current.textContent)} >00</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={zero} onClick={() => BtnClick(zero.current.textContent)}>0</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={point} onClick={() => BtnClick(point.current.textContent)}>.</button>
-                        <button className='bg-purple-600 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-purple-600 transition-all duration-500 ease-in-out' ref={equal} onClick={() => Equal()}>=</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={dbl_zero} onClick={() => BtnClick(dbl_zero.current.textContent)} >00</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={zero} onClick={() => BtnClick(zero.current.textContent)}>0</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={point} onClick={() => BtnClick(point.current.textContent)}>.</button>
+                        <button className='bg-orange-400 text-white p-4 rounded-md w-[25%] font-sans shadow-sm shadow-black hover:bg-white hover:text-orange-400 transition-all duration-500 ease-in-out' ref={equal} onClick={() => Equal()}>=</button>
                     </div>
                 </div>
             </div>
